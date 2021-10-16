@@ -1,16 +1,11 @@
 .weatherInfo {
 	background: var(--blue);
 	padding-block-end: 6.5625rem;
-	padding-block-start: 8.375rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	position: relative;
 	text-align: center;
-}
-
-.weatherInfo * {
-	margin: 0;
 }
 
 .weatherInfo::before {
@@ -26,6 +21,7 @@
 
 .weatherInfo-image {
 	inline-size: 9.375rem;
+	margin: 0;
 }
 
 .weatherInfo-image img {
@@ -56,6 +52,10 @@
 	flex-direction: column;
 	margin-block-start: 3rem;
 	gap: 2.0625rem;
+}
+
+.weatherInfo-details > * {
+	margin: 0;
 }
 
 .weatherInfo-time {
