@@ -1,0 +1,18 @@
+:root {
+    --bg: #100E1D;
+    --blue: #1E213A;
+    --purple: #414bdb;
+    --dark-purple: #110E3C:
+    --bull-purple: #585676;
+    --gray: #6E707A;
+	--gray10: #A09FB1;
+	--gray20: #E7E7EB;
+	--yellow: #FFEC65;
+	--fontBase: 'Raleway', sans-serif;
+	--headline1: 500 7.125rem/10.5663rem var(--fontBase);
+	--headline2: 700 4rem/4.6963rem var(--fontBase);
+	--headline3: 600 2.25rem/2.6412rem var(--fontBase);
+	--headline3-regular: 600 2.25rem/2.6412rem var(--fontBase);
+	--normal: 500 1rem/1.1738rem var(--fontBase);
+	--button: 600 1rem/1.1738rem var(--fontBase);
+}
