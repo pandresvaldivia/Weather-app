@@ -1,0 +1,60 @@
+.hightlightCard {
+	padding-block-end: 2.5rem;
+	padding-block-start: 1.375rem;
+	background: var(--blue);
+	inline-size: 100%;
+	max-inline-size: 20.5rem;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.hightlightCard-title {
+	font: var(--normal);
+	margin: 0;
+	margin-block-end: 6px;
+}
+
+.hightlightCard-datum {
+	font: var(--headline2);
+	margin: 0;
+}
+
+.hightlightCard-datum span:last-child {
+	font: var(--headline3);
+	margin: 0;
+	font-weight: 500;
+}
+
+.hightlightCard-wind {
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	margin-block-start: 1.875rem;
+}
+
+.hightlightCard-windIcon {
+	font-size: 0.5rem;
+	block-size: 20px;
+	inline-size: 20px;
+	display: inline-block;
+	position: relative;
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+
+.hightlightCard-windIcon i {
+	position: relative;
+	top: 2px;
+}
+
+.hightlightCard-windDirection {
+	font: 500 14px/16.44px var(--fontBase);
+}

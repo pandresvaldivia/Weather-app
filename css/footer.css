@@ -1,0 +1,13 @@
+.footer {
+	font: 500 0.875rem/1.0669rem var(--fontBase);
+	color: var(--gray10);
+	text-align: center;
+	margin: 0;
+	padding-block-end: 1.5rem;
+	padding-block-start: 4.5rem;
+}
+
+.footer-credits a {
+	font-weight: 700;
+	color: var(--gray10);
+}

@@ -15,4 +15,12 @@
 	--headline3-regular: 600 2.25rem/2.6412rem var(--fontBase);
 	--normal: 500 1rem/1.1738rem var(--fontBase);
 	--button: 600 1rem/1.1738rem var(--fontBase);
+	--grade: 400 3rem/3.5219rem var(--fontBase);
+}
+
+.body {
+	background: var(--bg);
+	color: var(--gray20);
+	margin: 0;
+	font: var(--normal);
 }

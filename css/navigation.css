@@ -1,0 +1,20 @@
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	padding-block-end: 1.125rem;
+	padding-block-start: 1.125rem;
+	padding-inline-end: 0.75rem;
+	padding-inline-start: 0.75rem;
+	position: fixed;
+	top: 0;
+	inline-size: 100%;
+	box-sizing: border-box;
+	z-index: 1;
+	backdrop-filter: blur(5px);
+}
+
+@supports not (backdrop-filter: blur(5px)) {
+	.navigation {
+		background: var(--blue);
+	}
+}

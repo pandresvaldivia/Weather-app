@@ -1,0 +1,29 @@
+.buttonMenu {
+	font: var(--normal);
+	color: var(--gray20);
+	background: var(--gray);
+	padding-block-end: 0.6875rem;
+	padding-block-start: 0.6875rem;
+	padding-inline-end: 1.125rem;
+	padding-inline-start: 1.125rem;
+	border: none;
+}
+
+.buttonIcon {
+	block-size: 40px;
+	inline-size: 40px;
+	background: var(--gray);
+	border: none;
+	color: var(--gray20);
+	font-size: 22px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+
+.buttonIcon i {
+	position: relative;
+	top: 2px;
+}

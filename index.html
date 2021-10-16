@@ -93,14 +93,170 @@
 		<!-- Styles -->
 		<link rel="stylesheet" href="./css/icon.css" />
 		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./css/button.css" />
+		<link rel="stylesheet" href="./css/navigation.css" />
+		<link rel="stylesheet" href="./css/weather-info.css" />
+		<link rel="stylesheet" href="./css/wrapper.css" />
+		<link rel="stylesheet" href="./css/cards-container.css" />
+		<link rel="stylesheet" href="./css/weather-card.css" />
+		<link rel="stylesheet" href="./css/hightlight-section.css" />
+		<link rel="stylesheet" href="./css/hightlight-card.css" />
+		<link rel="stylesheet" href="./css/progressBar.css" />
+		<link rel="stylesheet" href="./css/footer.css" />
 	</head>
-	<body>
+	<body class="body">
 		<header>
 			<div class="navigation">
-				<button class="navigation-search">Search for places</button>
-				<button class="navigation-location"></button>
+				<button class="buttonMenu">Search for places</button>
+				<button class="buttonIcon">
+					<i class="icon-location"></i>
+				</button>
 			</div>
 		</header>
+		<main>
+			<section class="weatherInfo">
+				<figure class="weatherInfo-image">
+					<img src="./assets/images/Shower.png" alt="" />
+				</figure>
+				<article class="weatherInfo-description">
+					<div class="weatherInfo-description">
+						<p class="weatherInfo-tempeture">15<span>°C</span></p>
+						<p class="weatherInfo-name">Shower</p>
+					</div>
+					<div class="weatherInfo-details">
+						<p class="weatherInfo-time">
+							<span>Today</span><span>&bull;</span><span>Fri. 5 Jun</span>
+						</p>
+						<p class="weatherInfo-ubication">
+							<i class="icon-ubication"></i><span>Helsinki</span>
+						</p>
+					</div>
+				</article>
+			</section>
+			<div class="wrapper">
+				<section class="cardsContainer">
+					<article class="weatherCard">
+						<div class="weatherCard-description">
+							<p class="weatherCard-date">Tomorrow</p>
+							<figure class="weatherCard-image">
+								<img src="./assets/images/Thunderstorm.png" alt="" />
+							</figure>
+						</div>
+						<p class="weatherCard-details">
+							<span>16°C</span><span>11°C</span>
+						</p>
+					</article>
+					<article class="weatherCard">
+						<div class="weatherCard-description">
+							<p class="weatherCard-date">Tomorrow</p>
+							<figure class="weatherCard-image">
+								<img src="./assets/images/Thunderstorm.png" alt="" />
+							</figure>
+						</div>
+						<p class="weatherCard-details">
+							<span>16°C</span><span>11°C</span>
+						</p>
+					</article>
+					<article class="weatherCard">
+						<div class="weatherCard-description">
+							<p class="weatherCard-date">Tomorrow</p>
+							<figure class="weatherCard-image">
+								<img src="./assets/images/Thunderstorm.png" alt="" />
+							</figure>
+						</div>
+						<p class="weatherCard-details">
+							<span>16°C</span><span>11°C</span>
+						</p>
+					</article>
+					<article class="weatherCard">
+						<div class="weatherCard-description">
+							<p class="weatherCard-date">Tomorrow</p>
+							<figure class="weatherCard-image">
+								<img src="./assets/images/Thunderstorm.png" alt="" />
+							</figure>
+						</div>
+						<p class="weatherCard-details">
+							<span>16°C</span><span>11°C</span>
+						</p>
+					</article>
+					<article class="weatherCard">
+						<div class="weatherCard-description">
+							<p class="weatherCard-date">Tomorrow</p>
+							<figure class="weatherCard-image">
+								<img src="./assets/images/Thunderstorm.png" alt="" />
+							</figure>
+						</div>
+						<p class="weatherCard-details">
+							<span>16°C</span><span>11°C</span>
+						</p>
+					</article>
+				</section>
+				<section class="hightlightSection" aria-labelledby="hightlights">
+					<h2 class="hightlightSection-title" id="hightlights">
+						Today’s Hightlights
+					</h2>
+					<div class="cardsContainer">
+						<article class="hightlightCard">
+							<div class="hightlightCard-data">
+								<h3 class="hightlightCard-title">Wind status</h3>
+								<p class="hightlightCard-datum">
+									<span>7</span><span>mph</span>
+								</p>
+							</div>
+							<p class="hightlightCard-wind">
+								<span class="hightlightCard-windIcon"
+									><i class="icon-wind"></i></span
+								><span class="hightlightCard-windDirection">WSW</span>
+							</p>
+						</article>
+						<article class="hightlightCard">
+							<div class="hightlightCard-data">
+								<h3 class="hightlightCard-title">Humidity</h3>
+								<p class="hightlightCard-datum">
+									<span>84</span><span>%</span>
+								</p>
+							</div>
+							<div class="progressBar">
+								<p class="progressBar-percentages">
+									<span>0</span>
+									<span>50</span>
+									<span>100</span>
+								</p>
+								<progress
+									class="progressBar-bar"
+									id="humidity"
+									value="84"
+									max="100"
+								></progress>
+							</div>
+						</article>
+						<article class="hightlightCard">
+							<div class="hightlightCard-data">
+								<h3 class="hightlightCard-title">Visibility</h3>
+								<p class="hightlightCard-datum">
+									<span>6,4</span> <span>miles</span>
+								</p>
+							</div>
+						</article>
+						<article class="hightlightCard">
+							<div class="hightlightCard-data">
+								<h3 class="hightlightCard-title">Air Pressure</h3>
+								<p class="hightlightCard-datum">
+									<span>998</span> <span>mb</span>
+								</p>
+							</div>
+						</article>
+					</div>
+				</section>
+			</div>
+		</main>
+		<footer class="footer">
+			<p class="footer-credits">
+				created by
+				<a href="#" target="_blank" rel="noreferrer">@pandresvaldivia</a> -
+				<a href="#" target="_blank" rel="noreferrer">devChallenges.io</a>
+			</p>
+		</footer>
 		<script src="./js/main.js" type="module"></script>
 	</body>
 </html>
