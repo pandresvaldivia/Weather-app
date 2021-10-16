@@ -1,0 +1,42 @@
+.progressBar {
+	inline-size: 230px;
+	margin-block-start: 0.75rem;
+	position: relative;
+	color: var(--gray10);
+}
+
+.progressBar::after {
+	content: '%';
+	position: absolute;
+	right: 0;
+	bottom: -1rem;
+	font: 0.75rem/0.875rem var(--fontBase);
+}
+
+.progressBar-percentages {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	font: 0.75rem/0.875rem var(--fontBase);
+}
+
+.progressBar-bar {
+	-webkit-appearance: none;
+	block-size: 0.5rem;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	overflow: hidden;
+	inline-size: 100%;
+}
+.progressBar-bar::-webkit-progress-bar {
+	background: var(--gray20);
+}
+.progressBar-bar::-webkit-progress-value {
+	background: var(--yellow);
+}
+.progressBar-bar::-moz-progress-bar {
+	background: var(--gray20);
+}

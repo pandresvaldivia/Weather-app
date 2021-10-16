@@ -1,0 +1,69 @@
+.weatherInfo {
+	background: var(--blue);
+	padding-block-end: 6.5625rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	text-align: center;
+}
+
+.weatherInfo::before {
+	position: absolute;
+	content: '';
+	background: url('../assets/images/Cloud-background.png') no-repeat;
+	background-size: 150% auto;
+	background-position: center 56px;
+	opacity: 0.1;
+	inset: 0;
+	position: absolute;
+}
+
+.weatherInfo-image {
+	inline-size: 9.375rem;
+	margin: 0;
+}
+
+.weatherInfo-image img {
+	vertical-align: middle;
+	inline-size: 100%;
+}
+
+.weatherInfo-tempeture {
+	font: var(--headline1);
+	margin: 0;
+}
+
+.weatherInfo-tempeture span {
+	font: var(--grade);
+	color: var(--gray10);
+}
+
+.weatherInfo-name {
+	font: var(--headline3);
+	margin: 0;
+	color: var(--gray10);
+}
+
+.weatherInfo-details {
+	font: var(--normal);
+	color: var(--gray10);
+	display: flex;
+	flex-direction: column;
+	margin-block-start: 3rem;
+	gap: 2.0625rem;
+}
+
+.weatherInfo-details > * {
+	margin: 0;
+}
+
+.weatherInfo-time {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+}
+
+.weatherInfo-ubication span {
+	margin-inline-start: 0.5rem;
+}

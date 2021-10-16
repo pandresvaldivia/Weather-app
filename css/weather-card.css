@@ -1,0 +1,36 @@
+.weatherCard {
+	background: var(--blue);
+	padding-block-end: 1.125rem;
+	padding-block-start: 1.125rem;
+	block-size: 11.0625rem;
+	inline-size: 7.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.weatherCard * {
+	margin: 0;
+}
+
+.weatherCard-image {
+	block-size: 62px;
+	text-align: center;
+	margin-block-start: 0.625rem;
+}
+
+.weatherCard-image img {
+	block-size: 100%;
+	vertical-align: middle;
+}
+
+.weatherCard-details {
+	display: flex;
+	gap: 1rem;
+}
+
+.weatherCard-details span:nth-of-type(2) {
+	color: var(--gray10);
+}
