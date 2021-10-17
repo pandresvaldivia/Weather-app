@@ -1,0 +1,24 @@
+.searchMenu {
+	position: absolute;
+	inline-size: 100%;
+	block-size: 100vh;
+	background: var(--blue);
+	z-index: 1;
+	left: -100%;
+}
+
+.searchMenu-close {
+	border: none;
+	block-size: 14px;
+	inline-size: 14px;
+	padding: 0;
+	background: transparent;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+.searchMenu-close i {
+	color: var(--gray20);
+	font-size: 0.875rem;
+}

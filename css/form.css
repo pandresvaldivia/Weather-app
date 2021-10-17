@@ -1,0 +1,42 @@
+.form {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	justify-content: center;
+	padding-block-start: 3.75rem;
+}
+
+.formInput {
+	position: relative;
+}
+
+.formInput i {
+	position: absolute;
+	display: block;
+	color: var(--gray30);
+	font-size: 1.0625rem;
+	block-size: 1.0625rem;
+	top: calc(50% - 0.5313rem);
+	left: 0.9375rem;
+	transition: color 0.2s;
+	-webkit-transition: color 0.2s;
+	-moz-transition: color 0.2s;
+	-ms-transition: color 0.2s;
+	-o-transition: color 0.2s;
+}
+
+.form:focus-within i {
+	color: var(--gray20);
+}
+
+.formInput input {
+	border: 1px solid var(--gray20);
+	padding: 0.875rem;
+	padding-inline-start: 3.0625rem;
+	background: transparent;
+	font: var(--normal);
+	inline-size: 15.75rem;
+	box-sizing: border-box;
+	color: var(--gray20);
+	outline: none;
+}

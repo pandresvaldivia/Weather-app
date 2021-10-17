@@ -27,3 +27,14 @@
 	position: relative;
 	top: 2px;
 }
+
+.buttonSearch {
+	background: var(--purple);
+	border: none;
+	font: var(--button);
+	color: var(--gray20);
+	padding-inline-end: 1rem;
+	padding-inline-start: 1rem;
+	padding-block-end: 0.875rem;
+	padding-block-start: 0.875rem;
+}

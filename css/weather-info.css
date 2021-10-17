@@ -6,6 +6,7 @@
 	align-items: center;
 	position: relative;
 	text-align: center;
+	position: relative;
 }
 
 .weatherInfo::before {
