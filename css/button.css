@@ -38,3 +38,9 @@
 	padding-block-end: 0.875rem;
 	padding-block-start: 0.875rem;
 }
+
+@media screen and (min-width: 1000px) {
+	.buttonSearch {
+		flex: 1;
+	}
+}

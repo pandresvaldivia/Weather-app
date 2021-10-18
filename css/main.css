@@ -1,14 +1,14 @@
 :root {
-    --bg: #100E1D;
-    --blue: #1E213A;
-    --purple: #414bdb;
-    --dark-purple: #110E3C:
-    --bull-purple: #585676;
-    --gray: #6E707A;
-	--gray10: #A09FB1;
-	--gray20: #E7E7EB;
-	--gray30:#616475;
-	--yellow: #FFEC65;
+	--bg: #100e1d;
+	--blue: #1e213a;
+	--purple: #414bdb;
+	--dark-purple: #110e3c;
+	--bull-purple: #585676;
+	--gray: #6e707a;
+	--gray10: #a09fb1;
+	--gray20: #e7e7eb;
+	--gray30: #616475;
+	--yellow: #ffec65;
 	--fontBase: 'Raleway', sans-serif;
 	--headline1: 500 7.125rem/10.5663rem var(--fontBase);
 	--headline2: 700 4rem/4.6963rem var(--fontBase);
@@ -24,4 +24,5 @@
 	color: var(--gray20);
 	margin: 0;
 	font: var(--normal);
+	min-inline-size: 22.5rem;
 }

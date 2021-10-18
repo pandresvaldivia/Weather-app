@@ -93,6 +93,7 @@
 		<!-- Styles -->
 		<link rel="stylesheet" href="./css/icon.css" />
 		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./css/layout.css" />
 		<link rel="stylesheet" href="./css/button.css" />
 		<link rel="stylesheet" href="./css/navigation.css" />
 		<link rel="stylesheet" href="./css/weather-info.css" />
@@ -100,6 +101,7 @@
 		<link rel="stylesheet" href="./css/options-list.css" />
 		<link rel="stylesheet" href="./css/form.css" />
 		<link rel="stylesheet" href="./css/wrapper.css" />
+		<link rel="stylesheet" href="./css/measurement-units.css" />
 		<link rel="stylesheet" href="./css/cards-container.css" />
 		<link rel="stylesheet" href="./css/weather-card.css" />
 		<link rel="stylesheet" href="./css/hightlight-section.css" />
@@ -108,206 +110,221 @@
 		<link rel="stylesheet" href="./css/footer.css" />
 	</head>
 	<body class="body">
-		<main>
-			<section class="weatherInfo">
-				<div class="searchMenu">
-					<button class="searchMenu-close">
-						<i class="icon-close"></i>
-					</button>
-					<form class="form">
-						<div class="formInput">
-							<i class="icon-search"></i>
-							<input type="text" placeholder="Search location" />
-						</div>
-						<input class="buttonSearch" type="submit" value="Search" />
-					</form>
-					<section class="optionsList">
-						<button class="optionsList-option">
-							<span>London</span><i class="icon-right"></i>
+		<div class="layout">
+			<div class="layout-sidebar">
+				<section class="weatherInfo">
+					<div class="searchMenu">
+						<button class="searchMenu-close">
+							<i class="icon-close"></i>
 						</button>
-						<button class="optionsList-option">
-							<span>Barcelona</span><i class="icon-right"></i>
-						</button>
-						<button class="optionsList-option">
-							<span>Long Beach</span><i class="icon-right"></i>
-						</button>
-						<button class="optionsList-option">
-							<span>Long Beach</span><i class="icon-right"></i>
-						</button>
-						<button class="optionsList-option">
-							<span>Long Beach</span><i class="icon-right"></i>
-						</button>
-						<button class="optionsList-option">
-							<span>Long Beach</span><i class="icon-right"></i>
-						</button>
-						<button class="optionsList-option">
-							<span>Long Beach</span><i class="icon-right"></i>
-						</button>
-						<button class="optionsList-option">
-							<span>Long Beach</span><i class="icon-right"></i>
-						</button>
-						<button class="optionsList-option">
-							<span>Long Beach</span><i class="icon-right"></i>
-						</button>
-						<button class="optionsList-option">
-							<span>Long Beach</span><i class="icon-right"></i>
-						</button>
-						<button class="optionsList-option">
-							<span>Long Beach</span><i class="icon-right"></i>
-						</button>
-						<button class="optionsList-option">
-							<span>Long Beach</span><i class="icon-right"></i>
-						</button>
-					</section>
-				</div>
-				<header class="navigation">
-					<button class="buttonMenu">Search for places</button>
-					<button class="buttonIcon">
-						<i class="icon-location"></i>
-					</button>
-				</header>
-				<figure class="weatherInfo-image">
-					<img src="./assets/images/Shower.png" alt="" />
-				</figure>
-				<article class="weatherInfo-description">
-					<div class="weatherInfo-description">
-						<p class="weatherInfo-tempeture">15<span>°C</span></p>
-						<p class="weatherInfo-name">Shower</p>
-					</div>
-					<div class="weatherInfo-details">
-						<p class="weatherInfo-time">
-							<span>Today</span><span>&bull;</span><span>Fri. 5 Jun</span>
-						</p>
-						<p class="weatherInfo-ubication">
-							<i class="icon-ubication"></i><span>Helsinki</span>
-						</p>
-					</div>
-				</article>
-			</section>
-			<div class="wrapper">
-				<section class="cardsContainer">
-					<article class="weatherCard">
-						<div class="weatherCard-description">
-							<p class="weatherCard-date">Tomorrow</p>
-							<figure class="weatherCard-image">
-								<img src="./assets/images/Thunderstorm.png" alt="" />
-							</figure>
-						</div>
-						<p class="weatherCard-details">
-							<span>16°C</span><span>11°C</span>
-						</p>
-					</article>
-					<article class="weatherCard">
-						<div class="weatherCard-description">
-							<p class="weatherCard-date">Tomorrow</p>
-							<figure class="weatherCard-image">
-								<img src="./assets/images/Thunderstorm.png" alt="" />
-							</figure>
-						</div>
-						<p class="weatherCard-details">
-							<span>16°C</span><span>11°C</span>
-						</p>
-					</article>
-					<article class="weatherCard">
-						<div class="weatherCard-description">
-							<p class="weatherCard-date">Tomorrow</p>
-							<figure class="weatherCard-image">
-								<img src="./assets/images/Thunderstorm.png" alt="" />
-							</figure>
-						</div>
-						<p class="weatherCard-details">
-							<span>16°C</span><span>11°C</span>
-						</p>
-					</article>
-					<article class="weatherCard">
-						<div class="weatherCard-description">
-							<p class="weatherCard-date">Tomorrow</p>
-							<figure class="weatherCard-image">
-								<img src="./assets/images/Thunderstorm.png" alt="" />
-							</figure>
-						</div>
-						<p class="weatherCard-details">
-							<span>16°C</span><span>11°C</span>
-						</p>
-					</article>
-					<article class="weatherCard">
-						<div class="weatherCard-description">
-							<p class="weatherCard-date">Tomorrow</p>
-							<figure class="weatherCard-image">
-								<img src="./assets/images/Thunderstorm.png" alt="" />
-							</figure>
-						</div>
-						<p class="weatherCard-details">
-							<span>16°C</span><span>11°C</span>
-						</p>
-					</article>
-				</section>
-				<section class="hightlightSection" aria-labelledby="hightlights">
-					<h2 class="hightlightSection-title" id="hightlights">
-						Today’s Hightlights
-					</h2>
-					<div class="cardsContainer">
-						<article class="hightlightCard">
-							<div class="hightlightCard-data">
-								<h3 class="hightlightCard-title">Wind status</h3>
-								<p class="hightlightCard-datum">
-									<span>7</span><span>mph</span>
-								</p>
+						<form class="form">
+							<div class="formInput">
+								<i class="icon-search"></i>
+								<input type="text" placeholder="Search location" />
 							</div>
-							<p class="hightlightCard-wind">
-								<span class="hightlightCard-windIcon"
-									><i class="icon-wind"></i></span
-								><span class="hightlightCard-windDirection">WSW</span>
+							<input class="buttonSearch" type="submit" value="Search" />
+						</form>
+						<section class="optionsList">
+							<button class="optionsList-option">
+								<span>London</span><i class="icon-right"></i>
+							</button>
+							<button class="optionsList-option">
+								<span>Barcelona</span><i class="icon-right"></i>
+							</button>
+							<button class="optionsList-option">
+								<span>Long Beach</span><i class="icon-right"></i>
+							</button>
+							<button class="optionsList-option">
+								<span>Long Beach</span><i class="icon-right"></i>
+							</button>
+							<button class="optionsList-option">
+								<span>Long Beach</span><i class="icon-right"></i>
+							</button>
+							<button class="optionsList-option">
+								<span>Long Beach</span><i class="icon-right"></i>
+							</button>
+							<button class="optionsList-option">
+								<span>Long Beach</span><i class="icon-right"></i>
+							</button>
+							<button class="optionsList-option">
+								<span>Long Beach</span><i class="icon-right"></i>
+							</button>
+							<button class="optionsList-option">
+								<span>Long Beach</span><i class="icon-right"></i>
+							</button>
+							<button class="optionsList-option">
+								<span>Long Beach</span><i class="icon-right"></i>
+							</button>
+							<button class="optionsList-option">
+								<span>Long Beach</span><i class="icon-right"></i>
+							</button>
+							<button class="optionsList-option">
+								<span>Long Beach</span><i class="icon-right"></i>
+							</button>
+						</section>
+					</div>
+					<header class="navigation">
+						<button class="buttonMenu">Search for places</button>
+						<button class="buttonIcon">
+							<i class="icon-location"></i>
+						</button>
+					</header>
+					<figure class="weatherInfo-image">
+						<img src="./assets/images/Shower.png" alt="" />
+					</figure>
+					<article class="weatherInfo-description">
+						<div class="weatherInfo-description">
+							<p class="weatherInfo-tempeture">15<span>°C</span></p>
+							<p class="weatherInfo-name">Shower</p>
+						</div>
+						<div class="weatherInfo-details">
+							<p class="weatherInfo-time">
+								<span>Today</span><span>&bull;</span><span>Fri. 5 Jun</span>
 							</p>
-						</article>
-						<article class="hightlightCard">
-							<div class="hightlightCard-data">
-								<h3 class="hightlightCard-title">Humidity</h3>
-								<p class="hightlightCard-datum">
-									<span>84</span><span>%</span>
-								</p>
-							</div>
-							<div class="progressBar">
-								<p class="progressBar-percentages">
-									<span>0</span>
-									<span>50</span>
-									<span>100</span>
-								</p>
-								<progress
-									class="progressBar-bar"
-									id="humidity"
-									value="84"
-									max="100"
-								></progress>
-							</div>
-						</article>
-						<article class="hightlightCard">
-							<div class="hightlightCard-data">
-								<h3 class="hightlightCard-title">Visibility</h3>
-								<p class="hightlightCard-datum">
-									<span>6,4</span> <span>miles</span>
-								</p>
-							</div>
-						</article>
-						<article class="hightlightCard">
-							<div class="hightlightCard-data">
-								<h3 class="hightlightCard-title">Air Pressure</h3>
-								<p class="hightlightCard-datum">
-									<span>998</span> <span>mb</span>
-								</p>
-							</div>
-						</article>
-					</div>
+							<p class="weatherInfo-ubication">
+								<i class="icon-ubication"></i><span>Helsinki</span>
+							</p>
+						</div>
+					</article>
 				</section>
 			</div>
-		</main>
-		<footer class="footer">
-			<p class="footer-credits">
-				created by
-				<a href="#" target="_blank" rel="noreferrer">@pandresvaldivia</a> -
-				<a href="#" target="_blank" rel="noreferrer">devChallenges.io</a>
-			</p>
-		</footer>
+			<div class="layout-block">
+				<div class="layout-main">
+					<main>
+						<div class="wrapper">
+							<div class="measurementUnits">
+								<button class="measurementUnits-option is-selected">°C</button>
+								<button class="measurementUnits-option">°F</button>
+							</div>
+							<section class="cardsContainer">
+								<article class="weatherCard">
+									<div class="weatherCard-description">
+										<p class="weatherCard-date">Tomorrow</p>
+										<figure class="weatherCard-image">
+											<img src="./assets/images/Thunderstorm.png" alt="" />
+										</figure>
+									</div>
+									<p class="weatherCard-details">
+										<span>16°C</span><span>11°C</span>
+									</p>
+								</article>
+								<article class="weatherCard">
+									<div class="weatherCard-description">
+										<p class="weatherCard-date">Tomorrow</p>
+										<figure class="weatherCard-image">
+											<img src="./assets/images/Thunderstorm.png" alt="" />
+										</figure>
+									</div>
+									<p class="weatherCard-details">
+										<span>16°C</span><span>11°C</span>
+									</p>
+								</article>
+								<article class="weatherCard">
+									<div class="weatherCard-description">
+										<p class="weatherCard-date">Tomorrow</p>
+										<figure class="weatherCard-image">
+											<img src="./assets/images/Thunderstorm.png" alt="" />
+										</figure>
+									</div>
+									<p class="weatherCard-details">
+										<span>16°C</span><span>11°C</span>
+									</p>
+								</article>
+								<article class="weatherCard">
+									<div class="weatherCard-description">
+										<p class="weatherCard-date">Tomorrow</p>
+										<figure class="weatherCard-image">
+											<img src="./assets/images/Thunderstorm.png" alt="" />
+										</figure>
+									</div>
+									<p class="weatherCard-details">
+										<span>16°C</span><span>11°C</span>
+									</p>
+								</article>
+								<article class="weatherCard">
+									<div class="weatherCard-description">
+										<p class="weatherCard-date">Tomorrow</p>
+										<figure class="weatherCard-image">
+											<img src="./assets/images/Thunderstorm.png" alt="" />
+										</figure>
+									</div>
+									<p class="weatherCard-details">
+										<span>16°C</span><span>11°C</span>
+									</p>
+								</article>
+							</section>
+							<section class="hightlightSection" aria-labelledby="hightlights">
+								<h2 class="hightlightSection-title" id="hightlights">
+									Today’s Hightlights
+								</h2>
+								<div class="cardsContainer">
+									<article class="hightlightCard">
+										<div class="hightlightCard-data">
+											<h3 class="hightlightCard-title">Wind status</h3>
+											<p class="hightlightCard-datum">
+												<span>7</span><span>mph</span>
+											</p>
+										</div>
+										<p class="hightlightCard-wind">
+											<span class="hightlightCard-windIcon"
+												><i class="icon-wind"></i></span
+											><span class="hightlightCard-windDirection">WSW</span>
+										</p>
+									</article>
+									<article class="hightlightCard">
+										<div class="hightlightCard-data">
+											<h3 class="hightlightCard-title">Humidity</h3>
+											<p class="hightlightCard-datum">
+												<span>84</span><span>%</span>
+											</p>
+										</div>
+										<div class="progressBar">
+											<p class="progressBar-percentages">
+												<span>0</span>
+												<span>50</span>
+												<span>100</span>
+											</p>
+											<progress
+												class="progressBar-bar"
+												id="humidity"
+												value="84"
+												max="100"
+											></progress>
+										</div>
+									</article>
+									<article class="hightlightCard">
+										<div class="hightlightCard-data">
+											<h3 class="hightlightCard-title">Visibility</h3>
+											<p class="hightlightCard-datum">
+												<span>6,4</span> <span>miles</span>
+											</p>
+										</div>
+									</article>
+									<article class="hightlightCard">
+										<div class="hightlightCard-data">
+											<h3 class="hightlightCard-title">Air Pressure</h3>
+											<p class="hightlightCard-datum">
+												<span>998</span> <span>mb</span>
+											</p>
+										</div>
+									</article>
+								</div>
+							</section>
+						</div>
+					</main>
+				</div>
+				<div class="layout-footer">
+					<footer class="footer">
+						<p class="footer-credits">
+							created by
+							<a href="#" target="_blank" rel="noreferrer">@pandresvaldivia</a>
+							-
+							<a href="#" target="_blank" rel="noreferrer">devChallenges.io</a>
+						</p>
+					</footer>
+				</div>
+			</div>
+		</div>
 		<script src="./js/main.js" type="module"></script>
 	</body>
 </html>

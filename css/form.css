@@ -4,10 +4,13 @@
 	gap: 0.75rem;
 	justify-content: center;
 	padding-block-start: 3.75rem;
+	flex-wrap: wrap;
 }
 
 .formInput {
 	position: relative;
+	flex-grow: 1;
+	max-inline-size: 15.75rem;
 }
 
 .formInput i {
@@ -35,8 +38,18 @@
 	padding-inline-start: 3.0625rem;
 	background: transparent;
 	font: var(--normal);
-	inline-size: 15.75rem;
 	box-sizing: border-box;
 	color: var(--gray20);
 	outline: none;
+	inline-size: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+	.buttonSearch {
+		flex: 1;
+	}
+
+	.formInput {
+		max-inline-size: none;
+	}
 }

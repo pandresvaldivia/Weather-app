@@ -4,9 +4,9 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	position: relative;
 	text-align: center;
 	position: relative;
+	flex: 1;
 }
 
 .weatherInfo::before {

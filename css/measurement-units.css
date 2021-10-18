@@ -1,0 +1,32 @@
+.measurementUnits {
+	display: none;
+	padding-block-end: 42px;
+	padding-block-start: 42px;
+	gap: 12px;
+	justify-content: flex-end;
+}
+
+.measurementUnits-option {
+	block-size: 40px;
+	inline-size: 40px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border: none;
+	background: var(--bull-purple);
+	color: var(--gray20);
+	font: 700 18px/21.13px var(--fontBase);
+}
+
+.measurementUnits-option.is-selected {
+	background: var(--gray20);
+	color: var(--dark-purple);
+}
+
+@media screen and (min-width: 1000px) {
+	.measurementUnits {
+		display: flex;
+	}
+}

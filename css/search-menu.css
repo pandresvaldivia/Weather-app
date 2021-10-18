@@ -4,6 +4,7 @@
 	block-size: 100vh;
 	background: var(--blue);
 	z-index: 1;
+	box-sizing: border-box;
 	left: -100%;
 }
 
@@ -21,4 +22,11 @@
 .searchMenu-close i {
 	color: var(--gray20);
 	font-size: 0.875rem;
+}
+
+@media screen and (min-width: 1000px) {
+	.searchMenu {
+		padding-inline-end: 46px;
+		padding-inline-start: 46px;
+	}
 }
