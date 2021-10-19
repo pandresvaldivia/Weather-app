@@ -39,6 +39,18 @@
 	padding-block-start: 0.875rem;
 }
 
+[class^='button'] {
+	cursor: pointer;
+}
+
+[class^='button']:active {
+	transform: scale(0.95);
+	-webkit-transform: scale(0.95);
+	-moz-transform: scale(0.95);
+	-ms-transform: scale(0.95);
+	-o-transform: scale(0.95);
+}
+
 @media screen and (min-width: 1000px) {
 	.buttonSearch {
 		flex: 1;

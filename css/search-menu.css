@@ -6,6 +6,16 @@
 	z-index: 1;
 	box-sizing: border-box;
 	left: -100%;
+	transition: 0.3s linear;
+	-webkit-transition: 0.3s linear;
+	-moz-transition: 0.3s linear;
+	-ms-transition: 0.3s linear;
+	-o-transition: 0.3s linear;
+	z-index: 2;
+}
+
+.searchMenu.is-open {
+	left: 0;
 }
 
 .searchMenu-close {
@@ -17,6 +27,7 @@
 	position: absolute;
 	top: 1rem;
 	right: 1rem;
+	cursor: pointer;
 }
 
 .searchMenu-close i {

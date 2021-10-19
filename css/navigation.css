@@ -7,4 +7,5 @@
 	inline-size: 100%;
 	box-sizing: border-box;
 	margin-block-end: 76px;
+	z-index: 1;
 }
