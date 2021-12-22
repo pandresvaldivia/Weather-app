@@ -1,0 +1,69 @@
+/* raleway-200 - latin */
+@font-face {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 200;
+	src: url('../assets/fonts/raleway-v22-latin-200.woff2') format('woff2'),
+		url('../assets/fonts/raleway-v22-latin-200.woff') format('woff');
+}
+/* raleway-regular - latin */
+@font-face {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../assets/fonts/raleway-v22-latin-regular.woff2') format('woff2'),
+		url('../assets/fonts/raleway-v22-latin-regular.woff') format('woff');
+}
+/* raleway-500 - latin */
+@font-face {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 500;
+	src: url('../assets/fonts/raleway-v22-latin-500.woff2') format('woff2')
+		url('../assets/fonts/raleway-v22-latin-500.woff') format('woff');
+}
+/* raleway-600 - latin */
+@font-face {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 600;
+	src: url('../assets/fonts/raleway-v22-latin-600.woff2') format('woff2'),
+		url('../assets/fonts/raleway-v22-latin-600.woff') format('woff');
+}
+/* raleway-700 - latin */
+@font-face {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../assets/fonts/raleway-v22-latin-700.woff2') format('woff2'),
+		url('../assets/fonts/raleway-v22-latin-700.woff') format('woff');
+}
+
+:root {
+	--bg: #100e1d;
+	--blue: #1e213a;
+	--purple: #414bdb;
+	--dark-purple: #110e3c;
+	--bull-purple: #585676;
+	--gray: #6e707a;
+	--gray10: #a09fb1;
+	--gray20: #e7e7eb;
+	--gray30: #616475;
+	--yellow: #ffec65;
+	--fontBase: 'Raleway', sans-serif;
+	--headline1: 500 7.125rem/10.5663rem var(--fontBase);
+	--headline2: 700 4rem/4.6963rem var(--fontBase);
+	--headline3: 600 2.25rem/2.6412rem var(--fontBase);
+	--headline3-regular: 600 2.25rem/2.6412rem var(--fontBase);
+	--normal: 500 1rem/1.1738rem var(--fontBase);
+	--button: 600 1rem/1.1738rem var(--fontBase);
+	--grade: 400 3rem/3.5219rem var(--fontBase);
+}
+
+.body {
+	background: var(--bg);
+	color: var(--gray20);
+	margin: 0;
+	font: var(--normal);
+	min-inline-size: 22.5rem;
+}

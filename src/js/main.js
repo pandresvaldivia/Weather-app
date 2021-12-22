@@ -1,0 +1,21 @@
+import '../css/icon.css';
+import '../css/main.css';
+import '../css/layout.css';
+import '../css/button.css';
+import '../css/navigation.css';
+import '../css/weather-info.css';
+import '../css/search-menu.css';
+import '../css/options-list.css';
+import '../css/form.css';
+import '../css/wrapper.css';
+import '../css/measurement-units.css';
+import '../css/cards-container.css';
+import '../css/weather-card.css';
+import '../css/hightlight-section.css';
+import '../css/hightlight-card.css';
+import '../css/progressBar.css';
+import '../css/footer.css';
+
+import App from './classes/app.js';
+
+new App();
