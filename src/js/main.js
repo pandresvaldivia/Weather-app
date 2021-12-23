@@ -9,7 +9,6 @@ import '../css/options-list.css';
 import '../css/form.css';
 import '../css/wrapper.css';
 import '../css/measurement-units.css';
-import '../css/cards-container.css';
 import '../css/weather-card.css';
 import '../css/hightlight-section.css';
 import '../css/hightlight-card.css';
