@@ -1,6 +1,6 @@
 .hightlightCard-container {
 	display: grid;
-	gap: 32px;
+	gap: 2rem;
 	grid-template-columns: repeat(auto-fit, minmax(312px, 328px));
 	justify-content: center;
 }
@@ -64,4 +64,10 @@
 
 .hightlightCard-windDirection {
 	font: 500 14px/16.44px var(--fontBase);
+}
+
+@media screen and (min-width: 1000px) {
+	.hightlightCard-container {
+		gap: 3rem;
+	}
 }

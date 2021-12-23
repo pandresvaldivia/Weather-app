@@ -1,7 +1,17 @@
 .hightlightSection {
 	margin-block-start: 3.25rem;
+	max-inline-size: 44rem;
+	margin-inline-end: auto;
+	margin-inline-start: auto;
 }
 
 .hightlightSection-title {
 	margin-block-end: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+	.hightlightSection {
+		margin: 0;
+		margin-block-start: 3.25rem;
+	}
 }

@@ -86,91 +86,89 @@
 	</head>
 	<body class="body">
 		<div class="layout">
-			<div class="layout-sidebar">
-				<section class="weatherInfo">
-					<div class="searchMenu">
-						<button class="searchMenu-close handleMenu">
-							<i class="icon-close" aria-hidden="true"></i>
+			<section class="weatherInfo">
+				<div class="searchMenu">
+					<button class="searchMenu-close handleMenu">
+						<i class="icon-close" aria-hidden="true"></i>
+					</button>
+					<form class="form">
+						<div class="formInput">
+							<i class="icon-search"></i>
+							<input type="text" placeholder="Search location" />
+						</div>
+						<input class="buttonSearch" type="submit" value="Search" />
+					</form>
+					<section class="optionsList">
+						<button class="optionsList-option">
+							<span>London</span><i class="icon-right"></i>
 						</button>
-						<form class="form">
-							<div class="formInput">
-								<i class="icon-search"></i>
-								<input type="text" placeholder="Search location" />
-							</div>
-							<input class="buttonSearch" type="submit" value="Search" />
-						</form>
-						<section class="optionsList">
-							<button class="optionsList-option">
-								<span>London</span><i class="icon-right"></i>
-							</button>
-							<button class="optionsList-option">
-								<span>Barcelona</span><i class="icon-right"></i>
-							</button>
-							<button class="optionsList-option">
-								<span>Long Beach</span><i class="icon-right"></i>
-							</button>
-							<button class="optionsList-option">
-								<span>Long Beach</span><i class="icon-right"></i>
-							</button>
-							<button class="optionsList-option">
-								<span>Long Beach</span><i class="icon-right"></i>
-							</button>
-							<button class="optionsList-option">
-								<span>Long Beach</span><i class="icon-right"></i>
-							</button>
-							<button class="optionsList-option">
-								<span>Long Beach</span><i class="icon-right"></i>
-							</button>
-							<button class="optionsList-option">
-								<span>Long Beach</span><i class="icon-right"></i>
-							</button>
-							<button class="optionsList-option">
-								<span>Long Beach</span><i class="icon-right"></i>
-							</button>
-							<button class="optionsList-option">
-								<span>Long Beach</span><i class="icon-right"></i>
-							</button>
-							<button class="optionsList-option">
-								<span>Long Beach</span><i class="icon-right"></i>
-							</button>
-							<button class="optionsList-option">
-								<span>Long Beach</span><i class="icon-right"></i>
-							</button>
-						</section>
+						<button class="optionsList-option">
+							<span>Barcelona</span><i class="icon-right"></i>
+						</button>
+						<button class="optionsList-option">
+							<span>Long Beach</span><i class="icon-right"></i>
+						</button>
+						<button class="optionsList-option">
+							<span>Long Beach</span><i class="icon-right"></i>
+						</button>
+						<button class="optionsList-option">
+							<span>Long Beach</span><i class="icon-right"></i>
+						</button>
+						<button class="optionsList-option">
+							<span>Long Beach</span><i class="icon-right"></i>
+						</button>
+						<button class="optionsList-option">
+							<span>Long Beach</span><i class="icon-right"></i>
+						</button>
+						<button class="optionsList-option">
+							<span>Long Beach</span><i class="icon-right"></i>
+						</button>
+						<button class="optionsList-option">
+							<span>Long Beach</span><i class="icon-right"></i>
+						</button>
+						<button class="optionsList-option">
+							<span>Long Beach</span><i class="icon-right"></i>
+						</button>
+						<button class="optionsList-option">
+							<span>Long Beach</span><i class="icon-right"></i>
+						</button>
+						<button class="optionsList-option">
+							<span>Long Beach</span><i class="icon-right"></i>
+						</button>
+					</section>
+				</div>
+				<header class="navigation">
+					<button class="buttonMenu handleMenu">Search for places</button>
+					<button class="buttonIcon">
+						<i class="icon-location"></i>
+					</button>
+				</header>
+				<figure class="weatherInfo-image">
+					<img src="./assets/images/Shower.png" alt="" />
+				</figure>
+				<article class="weatherInfo-description">
+					<div class="weatherInfo-description">
+						<p class="weatherInfo-tempeture">15<span>°C</span></p>
+						<p class="weatherInfo-name">Shower</p>
 					</div>
-					<header class="navigation">
-						<button class="buttonMenu handleMenu">Search for places</button>
-						<button class="buttonIcon">
-							<i class="icon-location"></i>
-						</button>
-					</header>
-					<figure class="weatherInfo-image">
-						<img src="./assets/images/Shower.png" alt="" />
-					</figure>
-					<article class="weatherInfo-description">
-						<div class="weatherInfo-description">
-							<p class="weatherInfo-tempeture">15<span>°C</span></p>
-							<p class="weatherInfo-name">Shower</p>
+					<div class="weatherInfo-details">
+						<p class="weatherInfo-time">
+							<span>Today</span><span>&bull;</span><span>Fri. 5 Jun</span>
+						</p>
+						<p class="weatherInfo-ubication">
+							<i class="icon-ubication"></i><span>Helsinki</span>
+						</p>
+					</div>
+				</article>
+			</section>
+			<div class="layout-main">
+				<main class="main">
+					<div class="wrapper">
+						<div class="measurementUnits">
+							<button class="measurementUnits-option is-selected">°C</button>
+							<button class="measurementUnits-option">°F</button>
 						</div>
-						<div class="weatherInfo-details">
-							<p class="weatherInfo-time">
-								<span>Today</span><span>&bull;</span><span>Fri. 5 Jun</span>
-							</p>
-							<p class="weatherInfo-ubication">
-								<i class="icon-ubication"></i><span>Helsinki</span>
-							</p>
-						</div>
-					</article>
-				</section>
-			</div>
-			<div class="layout-block">
-				<div class="layout-main">
-					<main>
-						<div class="wrapper">
-							<div class="measurementUnits">
-								<button class="measurementUnits-option is-selected">°C</button>
-								<button class="measurementUnits-option">°F</button>
-							</div>
+						<div class="main-content">
 							<section class="weatherCard-container">
 								<article class="weatherCard">
 									<div class="weatherCard-description">
@@ -286,18 +284,17 @@
 								</div>
 							</section>
 						</div>
-					</main>
-				</div>
-				<div class="layout-footer">
-					<footer class="footer">
-						<p class="footer-credits">
-							created by
-							<a href="#" target="_blank" rel="noreferrer">@pandresvaldivia</a>
-							-
-							<a href="#" target="_blank" rel="noreferrer">devChallenges.io</a>
-						</p>
-					</footer>
-				</div>
+					</div>
+				</main>
+
+				<footer class="footer">
+					<p class="footer-credits">
+						created by
+						<a href="#" target="_blank" rel="noreferrer">@pandresvaldivia</a>
+						-
+						<a href="#" target="_blank" rel="noreferrer">devChallenges.io</a>
+					</p>
+				</footer>
 			</div>
 		</div>
 	</body>
