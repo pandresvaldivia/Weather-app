@@ -1,9 +1,12 @@
 .weatherInfo {
 	background: var(--blue);
-	background-image: url('../assets/images/Cloud-background.png');
+	background-image: url('../assets/images/bg-cloud.png'),
+		url('../assets/images/bg-cloud.png'), url('../assets/images/bg-cloud.png'),
+		url('../assets/images/bg-cloud.png');
 	background-repeat: no-repeat;
-	background-size: 150% auto;
-	background-position: center 56px;
+	background-size: auto 93px, auto 115px, auto 93px, auto 67px;
+	background-position: top 106px left -80px, top 270px left -100px,
+		top 106px right -80px, top 335px right -20px;
 	padding-block-end: 6.5625rem;
 	display: flex;
 	flex-direction: column;
@@ -11,6 +14,8 @@
 	text-align: center;
 	position: relative;
 	flex: 1;
+	animation: cloudsMovement 3s ease-in-out infinite alternate;
+	-webkit-animation: cloudsMovement 3s ease-in-out infinite alternate;
 }
 
 .weatherInfo-image {
@@ -27,10 +32,12 @@
 	font: var(--grade);
 	color: var(--gray10);
 	margin: 0;
+	margin-block-start: 2.5rem;
 }
 
 .weatherInfo-tempeture span {
 	font: var(--headline1);
+	color: var(--gray20);
 }
 
 .weatherInfo-name {
@@ -60,4 +67,33 @@
 
 .weatherInfo-ubication span {
 	margin-inline-start: 0.5rem;
+}
+
+@keyframes cloudsMovement {
+	to {
+		background-position: top 86px left -65px, top 280px left -85px,
+			top 116px right -65px, top 315px right -30px;
+	}
+}
+
+@media screen and (min-width: 460px) {
+	.weatherInfo {
+		background: var(--blue);
+		background-image: url('../assets/images/bg-cloud.png'),
+			url('../assets/images/bg-cloud.png'), url('../assets/images/bg-cloud.png'),
+			url('../assets/images/bg-cloud.png');
+		background-repeat: no-repeat;
+		background-size: auto 107px, auto 131px, auto 108px, auto 78px;
+		background-position: top 106px left -80px, top 270px left -100px,
+			top 106px right -80px, top 335px right -20px;
+		padding-block-end: 6.5625rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		position: relative;
+		flex: 1;
+		animation: cloudsMovement 3s ease-in-out infinite alternate;
+		-webkit-animation: cloudsMovement 3s ease-in-out infinite alternate;
+	}
 }
