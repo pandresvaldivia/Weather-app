@@ -1,5 +1,9 @@
 .weatherInfo {
 	background: var(--blue);
+	background-image: url('../assets/images/Cloud-background.png');
+	background-repeat: no-repeat;
+	background-size: 150% auto;
+	background-position: center 56px;
 	padding-block-end: 6.5625rem;
 	display: flex;
 	flex-direction: column;
@@ -7,17 +11,6 @@
 	text-align: center;
 	position: relative;
 	flex: 1;
-}
-
-.weatherInfo::before {
-	position: absolute;
-	content: '';
-	background: url('../assets/images/Cloud-background.png') no-repeat;
-	background-size: 150% auto;
-	background-position: center 56px;
-	opacity: 0.1;
-	inset: 0;
-	position: absolute;
 }
 
 .weatherInfo-image {
