@@ -31,13 +31,13 @@
 }
 
 .weatherInfo-tempeture {
-	font: var(--headline1);
+	font: var(--grade);
+	color: var(--gray10);
 	margin: 0;
 }
 
 .weatherInfo-tempeture span {
-	font: var(--grade);
-	color: var(--gray10);
+	font: var(--headline1);
 }
 
 .weatherInfo-name {

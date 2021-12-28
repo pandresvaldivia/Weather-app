@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssWebpackPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const DotEnv = require('dotenv-webpack');
 
 module.exports = {
 	context: path.resolve(__dirname, 'src'),
@@ -65,6 +66,7 @@ module.exports = {
 				},
 			],
 		}),
+		new DotEnv(),
 	],
 	devServer: {
 		static: {
