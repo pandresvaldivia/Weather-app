@@ -51,7 +51,7 @@
 	-o-transform: scale(0.95);
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
 	.buttonSearch {
 		flex: 1;
 	}

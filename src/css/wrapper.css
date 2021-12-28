@@ -3,12 +3,14 @@
 	padding-inline-start: 1.5rem;
 	padding-block-end: 1.5rem;
 	padding-block-start: 3.25rem;
+	box-sizing: border-box;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
 	.wrapper {
 		padding: 0;
 		padding-inline-start: 2rem;
 		padding-inline-end: 2rem;
+		min-inline-size: 48rem;
 	}
 }

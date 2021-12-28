@@ -35,7 +35,7 @@
 	font-size: 0.875rem;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
 	.searchMenu {
 		padding-inline-end: 46px;
 		padding-inline-start: 46px;
