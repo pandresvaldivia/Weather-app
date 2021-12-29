@@ -1,6 +1,7 @@
 import { sidebar } from '../selectors.js';
 import { handleSidebar } from '../functions.js';
 import { getCurrentWeather } from '../currentWeather.js';
+import { getWeeklyInfo } from '../weeklyWeather.js';
 
 class App {
 	constructor() {
@@ -9,6 +10,7 @@ class App {
 		});
 
 		getCurrentWeather();
+		getWeeklyInfo();
 	}
 }
 
