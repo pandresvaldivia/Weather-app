@@ -23,6 +23,10 @@
 	margin: 0;
 }
 
+.weatherCard-date {
+	text-align: center;
+}
+
 .weatherCard-image {
 	block-size: 62px;
 	text-align: center;

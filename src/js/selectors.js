@@ -6,3 +6,4 @@ export const $name = document.querySelector('.weatherInfo-name');
 export const $city = document.querySelector('.weatherInfo-ubication span');
 export const $icon = document.querySelector('.weatherInfo-image img');
 export const $date = document.querySelector('#current-date');
+export const $itemContainer = document.querySelector('.weatherCard-container');

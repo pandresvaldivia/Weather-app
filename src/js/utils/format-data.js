@@ -15,7 +15,7 @@ function formatDate(miliseconds) {
 	const weekday = days[date.getDay()];
 	const month = months[date.getMonth()];
 
-	return `${weekday}. ${day} ${month}`;
+	return `${weekday}, ${day} ${month}`;
 }
 
 function formatVisibility(visibility) {
