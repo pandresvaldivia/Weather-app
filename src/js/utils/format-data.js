@@ -23,6 +23,10 @@ function formatVisibility(visibility) {
 	return visibility;
 }
 
+function formatWindSpeed(speed) {
+	return speed.toFixed();
+}
+
 function formatWindDirection(deg) {
 	if (deg === 0) {
 		return 'N';
@@ -79,4 +83,5 @@ export {
 	formatDate,
 	formatVisibility,
 	formatWindDirection,
+	formatWindSpeed,
 };

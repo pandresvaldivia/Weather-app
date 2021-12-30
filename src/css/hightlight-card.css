@@ -5,6 +5,10 @@
 	justify-content: center;
 }
 
+.hightlightCard-container.is-hidden {
+	display: none;
+}
+
 .hightlightCard {
 	padding-block-end: 2.5rem;
 	padding-block-start: 1.375rem;
