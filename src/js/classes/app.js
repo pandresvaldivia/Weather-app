@@ -1,7 +1,8 @@
-import { sidebar } from '../selectors.js';
+import { sidebar, $unitButtons } from '../selectors.js';
 import { handleSidebar } from '../functions.js';
 import { getCurrentWeather } from '../currentWeather.js';
 import { getWeeklyInfo } from '../weeklyWeather.js';
+import { handleUnits } from '../tempetureUnit.js';
 
 class App {
 	constructor() {
@@ -11,6 +12,10 @@ class App {
 
 		getCurrentWeather();
 		getWeeklyInfo();
+		for (const $unitBtn of $unitButtons) {
+			const unit = $unitBtn.dataset.unit;
+			$unitBtn.addEventListener('click', () => handleUnits(unit));
+		}
 	}
 }
 

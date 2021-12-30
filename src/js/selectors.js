@@ -10,3 +10,6 @@ export const $itemContainer = document.querySelector('.weatherCard-container');
 export const $highlightContent = document.querySelector(
 	'.hightlightSection-content'
 );
+export const $unitButtons = document.querySelectorAll(
+	'.measurementUnits-option'
+);

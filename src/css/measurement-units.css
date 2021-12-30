@@ -18,6 +18,11 @@
 	background: var(--bull-purple);
 	color: var(--gray20);
 	font: 700 18px/21.13px var(--fontBase);
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 .measurementUnits-option.is-selected {

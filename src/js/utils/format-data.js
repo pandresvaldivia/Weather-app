@@ -77,6 +77,10 @@ function formatWindDirection(deg) {
 	return 'NNW';
 }
 
+function formatFahrenheit(grades) {
+	return grades * (9 / 5) + 32;
+}
+
 export {
 	formatTemp,
 	formatIconUrl,
@@ -84,4 +88,5 @@ export {
 	formatVisibility,
 	formatWindDirection,
 	formatWindSpeed,
+	formatFahrenheit,
 };

@@ -48,6 +48,18 @@
 	gap: 1rem;
 }
 
+.weatherCard-details:nth-of-type(2) {
+	display: none;
+}
+
+.weatherCard-container.is-fahrenheit .weatherCard-details {
+	display: none;
+}
+
+.weatherCard-container.is-fahrenheit .weatherCard-details:nth-of-type(2) {
+	display: flex;
+}
+
 .weatherCard-details span:nth-of-type(2) {
 	color: var(--gray10);
 }

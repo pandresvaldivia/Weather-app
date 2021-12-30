@@ -149,6 +149,9 @@
 					</figure>
 					<div class="weatherInfo-description">
 						<p class="weatherInfo-tempeture"><span>15</span>°C</p>
+						<p class="weatherInfo-tempeture .is-fahrenheit">
+							<span>15</span>°F
+						</p>
 						<p class="weatherInfo-name">Shower</p>
 					</div>
 					<div class="weatherInfo-details">
@@ -166,8 +169,10 @@
 				<main class="main">
 					<div class="wrapper">
 						<div class="measurementUnits">
-							<button class="measurementUnits-option is-selected">°C</button>
-							<button class="measurementUnits-option">°F</button>
+							<button class="measurementUnits-option is-selected" data-unit="C">
+								°C
+							</button>
+							<button class="measurementUnits-option" data-unit="F">°F</button>
 						</div>
 						<div class="main-content">
 							<section class="weatherCard-container"></section>

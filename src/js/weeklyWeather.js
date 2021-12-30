@@ -8,10 +8,19 @@ import {
 	formatTemp,
 	formatDate,
 	formatWindSpeed,
+	formatFahrenheit,
 } from './utils/format-data.js';
 import { createItemInfo } from './weeklyInfo';
 
-function getItemTemplate({ temp_min, temp_max, icon, name, date }) {
+function getItemTemplate({
+	temp_min,
+	temp_max,
+	temp_minF,
+	temp_maxF,
+	icon,
+	name,
+	date,
+}) {
 	return `
         <article class="weatherCard">
             <div class="weatherCard-description" title="${name}">
@@ -22,6 +31,9 @@ function getItemTemplate({ temp_min, temp_max, icon, name, date }) {
             </div>
             <p class="weatherCard-details">
                 <span>${temp_min}°C</span><span>${temp_max}°C</span>
+            </p>
+            <p class="weatherCard-details">
+                <span>${temp_minF}°F</span><span>${temp_maxF}°F</span>
             </p>
         </article>
     `;
@@ -70,6 +82,8 @@ function configWeeklyData(data, index) {
 		date: getItemDate(date, index),
 		temp_min: formatTemp(temp_min),
 		temp_max: formatTemp(temp_max),
+		temp_minF: formatTemp(formatFahrenheit(temp_min)),
+		temp_maxF: formatTemp(formatFahrenheit(temp_max)),
 		humidity,
 		pressure,
 		icon,
@@ -92,6 +106,7 @@ function getTimeWeather(rawData) {
 	rawData.forEach((weather, index) => {
 		if (index % 8 === 0) {
 			weather = configWeeklyData(weather, index);
+			console.log(weather);
 			weeklyWeather.push(weather);
 		}
 	});
