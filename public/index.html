@@ -148,19 +148,17 @@
 						<img src="./assets/images/Shower.png" alt="" />
 					</figure>
 					<div class="weatherInfo-description">
-						<p class="weatherInfo-tempeture"><span>15</span>°C</p>
-						<p class="weatherInfo-tempeture .is-fahrenheit">
-							<span>15</span>°F
-						</p>
+						<p class="weatherInfo-tempeture"><span></span>°C</p>
+						<p class="weatherInfo-tempeture is-fahrenheit"><span></span>°F</p>
 						<p class="weatherInfo-name">Shower</p>
 					</div>
 					<div class="weatherInfo-details">
 						<p class="weatherInfo-time">
 							<span>Today</span><span>&bull;</span
-							><span id="current-date">Fri. 5 Jun</span>
+							><span id="current-date"></span>
 						</p>
 						<p class="weatherInfo-ubication">
-							<i class="icon-ubication"></i><span>Helsinki</span>
+							<i class="icon-ubication"></i><span></span>
 						</p>
 					</div>
 				</article>
@@ -169,7 +167,11 @@
 				<main class="main">
 					<div class="wrapper">
 						<div class="measurementUnits">
-							<button class="measurementUnits-option is-selected" data-unit="C">
+							<button
+								class="measurementUnits-option"
+								data-unit="C"
+								aria-selected="true"
+							>
 								°C
 							</button>
 							<button class="measurementUnits-option" data-unit="F">°F</button>

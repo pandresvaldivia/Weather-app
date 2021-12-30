@@ -35,6 +35,18 @@
 	margin-block-start: 2.5rem;
 }
 
+.weatherInfo-tempeture:nth-of-type(2) {
+	display: none;
+}
+
+.weatherInfo-description.is-fahrenheit .weatherInfo-tempeture {
+	display: none;
+}
+
+.weatherInfo-description.is-fahrenheit .weatherInfo-tempeture:nth-of-type(2) {
+	display: block;
+}
+
 .weatherInfo-tempeture span {
 	font: var(--headline1);
 	color: var(--gray20);

@@ -25,7 +25,7 @@
 	user-select: none;
 }
 
-.measurementUnits-option.is-selected {
+.measurementUnits-option[aria-selected='true'] {
 	background: var(--gray20);
 	color: var(--dark-purple);
 }

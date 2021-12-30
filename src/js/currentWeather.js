@@ -1,7 +1,12 @@
 import { getWeatherInfo } from './services/weather.js';
 import { getCoordinates } from './services/geolocation.js';
-import { $temp, $name, $city, $icon, $date } from './selectors.js';
-import { formatTemp, formatIconUrl, formatDate } from './utils/format-data.js';
+import { $temp, $tempF, $name, $city, $icon, $date } from './selectors.js';
+import {
+	formatTemp,
+	formatIconUrl,
+	formatDate,
+	formatFahrenheit,
+} from './utils/format-data.js';
 
 async function getCurrentWeather() {
 	const { latitude, longitude, error } = await getCoordinates();
@@ -20,6 +25,7 @@ function configData({ name, weather, main: { temp } }) {
 
 	printIcon(icon);
 	printData($temp, formatTemp(temp));
+	printData($tempF, formatTemp(formatFahrenheit(temp)));
 	printData($name, main);
 	printData($city, name);
 	printData($date, formatDate(new Date().getTime()));
