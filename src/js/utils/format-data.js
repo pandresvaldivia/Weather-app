@@ -77,6 +77,23 @@ function formatWindDirection(deg) {
 	return 'NNW';
 }
 
+function formatCurrentInfo(data) {
+	const {
+		name: city,
+		main: { temp },
+	} = data;
+	const { country } = data.sys;
+	const { main: description, icon } = data.weather[0];
+
+	return {
+		city,
+		country,
+		temp,
+		description,
+		icon,
+	};
+}
+
 function formatFahrenheit(grades) {
 	return grades * (9 / 5) + 32;
 }
@@ -89,4 +106,5 @@ export {
 	formatWindDirection,
 	formatWindSpeed,
 	formatFahrenheit,
+	formatCurrentInfo,
 };

@@ -6,6 +6,7 @@ import {
 	formatIconUrl,
 	formatDate,
 	formatFahrenheit,
+	formatCurrentInfo,
 } from './utils/format-data.js';
 
 async function getCurrentWeather() {
@@ -20,14 +21,14 @@ async function getCurrentWeather() {
 	configData(weatherData);
 }
 
-function configData({ name, weather, main: { temp } }) {
-	const { icon, main } = weather[0];
+function configData(data) {
+	const { city, temp, description, icon } = formatCurrentInfo(data);
 
 	printIcon(icon);
 	printData($temp, formatTemp(temp));
 	printData($tempF, formatTemp(formatFahrenheit(temp)));
-	printData($name, main);
-	printData($city, name);
+	printData($name, description);
+	printData($city, city);
 	printData($date, formatDate(new Date().getTime()));
 }
 
@@ -39,4 +40,4 @@ function printIcon(icon) {
 	$icon.src = formatIconUrl(icon);
 }
 
-export { getCurrentWeather };
+export { getCurrentWeather, configData };

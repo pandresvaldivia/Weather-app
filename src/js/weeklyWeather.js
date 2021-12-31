@@ -106,7 +106,6 @@ function getTimeWeather(rawData) {
 	rawData.forEach((weather, index) => {
 		if (index % 8 === 0) {
 			weather = configWeeklyData(weather, index);
-			console.log(weather);
 			weeklyWeather.push(weather);
 		}
 	});
@@ -141,4 +140,4 @@ function displayItemInfo(id) {
 	$itemInfo.classList.remove('is-hidden');
 }
 
-export { getWeeklyInfo };
+export { getWeeklyInfo, printWeeklyData, getTimeWeather };

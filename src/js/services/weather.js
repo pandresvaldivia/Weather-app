@@ -14,4 +14,16 @@ async function getWeatherInfo(lat, lon, range = 'weather') {
 	}
 }
 
-export { getWeatherInfo };
+async function getWeatherPlaceInfo(place, range = 'weather') {
+	try {
+		const { data } = await axios.get(
+			`https://api.openweathermap.org/data/2.5/${range}?q=${place}&appid=${key}&units=metric`
+		);
+
+		return { ...data, error: false };
+	} catch {
+		return { error: 'We can not get weather information fron the API' };
+	}
+}
+
+export { getWeatherInfo, getWeatherPlaceInfo };
