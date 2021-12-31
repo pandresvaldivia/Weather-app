@@ -43,3 +43,19 @@
 .optionsList-option:hover i {
 	opacity: 1;
 }
+
+.optionsList::-webkit-scrollbar {
+	block-size: 0.5rem;
+	inline-size: 0.5rem;
+	cursor: pointer;
+}
+
+.optionsList::-webkit-scrollbar-thumb {
+	background: var(--bg);
+	border-radius: 1.5625rem;
+}
+
+.optionsList::-webkit-scrollbar-track {
+	background: rgba(16, 14, 29, 0.4);
+	border-radius: 1.5625rem;
+}

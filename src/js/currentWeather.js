@@ -22,7 +22,7 @@ async function getCurrentWeather() {
 }
 
 function configData(data) {
-	const { city, temp, description, icon } = formatCurrentInfo(data);
+	const { city, country, temp, description, icon } = formatCurrentInfo(data);
 
 	printIcon(icon);
 	printData($temp, formatTemp(temp));
@@ -30,6 +30,8 @@ function configData(data) {
 	printData($name, description);
 	printData($city, city);
 	printData($date, formatDate(new Date().getTime()));
+
+	return { city, country };
 }
 
 function printData($elem, data) {
