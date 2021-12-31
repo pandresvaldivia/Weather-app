@@ -9,6 +9,7 @@ export const $date = document.querySelector('#current-date');
 export const $itemContainer = document.querySelector('.weatherCard-container');
 export const $searchInput = document.querySelector('#search');
 export const $searchBtn = document.querySelector('.buttonSearch');
+export const $locationList = document.querySelector('.optionsList');
 export const $tempContainer = document.querySelector(
 	'.weatherInfo-description'
 );
