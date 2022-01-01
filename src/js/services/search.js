@@ -7,6 +7,7 @@ import { getWeatherPlaceInfo } from './weather.js';
 import { configData } from '../currentWeather.js';
 import { getTimeWeather, printWeeklyData } from '../weeklyWeather.js';
 import { addLocation } from './storeLocations.js';
+import { handleSidebar } from '../functions.js';
 
 async function searchWeatherPlace(e) {
 	e.preventDefault();
@@ -18,6 +19,9 @@ async function searchWeatherPlace(e) {
 		await printWeeklyWeather(place);
 
 		addLocation(location);
+
+		clearInput();
+		handleSidebar('close');
 	} catch (error) {
 		console.error(error);
 	}
@@ -58,6 +62,10 @@ function clearItemsInfo() {
 	while ($highlightContent.firstElementChild) {
 		$highlightContent.firstElementChild.remove();
 	}
+}
+
+function clearInput() {
+	$searchInput.value = '';
 }
 
 export { searchWeatherPlace };

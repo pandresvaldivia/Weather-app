@@ -1,4 +1,4 @@
-import { sidebar, $unitButtons, $searchBtn } from '../selectors.js';
+import { $openBtn, $closeBtn, $unitButtons, $searchBtn } from '../selectors.js';
 import { handleSidebar } from '../functions.js';
 import { getCurrentWeather } from '../currentWeather.js';
 import { getWeeklyInfo } from '../weeklyWeather.js';
@@ -9,7 +9,8 @@ import { createDatabase } from '../services/storeLocations.js';
 class App {
 	constructor() {
 		document.addEventListener('DOMContentLoaded', () => {
-			sidebar.addEventListener('click', handleSidebar);
+			$openBtn.addEventListener('click', () => handleSidebar());
+			$closeBtn.addEventListener('click', () => handleSidebar('close'));
 		});
 
 		createDatabase();

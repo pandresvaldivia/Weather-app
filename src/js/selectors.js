@@ -1,6 +1,7 @@
 export const searchMenu = document.querySelector('.searchMenu');
-export const sidebar = document.querySelector('.weatherInfo');
 export const body = document.querySelector('.body');
+export const $openBtn = document.querySelector('.buttonMenu');
+export const $closeBtn = document.querySelector('.searchMenu-close');
 export const $temp = document.querySelector('.weatherInfo-tempeture span');
 export const $name = document.querySelector('.weatherInfo-name');
 export const $city = document.querySelector('.weatherInfo-ubication span');
