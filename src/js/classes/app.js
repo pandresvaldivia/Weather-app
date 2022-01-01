@@ -1,4 +1,10 @@
-import { $openBtn, $closeBtn, $unitButtons, $searchBtn } from '../selectors.js';
+import {
+	$openBtn,
+	$closeBtn,
+	$unitButtons,
+	$searchBtn,
+	$currentLocationBtn,
+} from '../selectors.js';
 import { handleSidebar } from '../functions.js';
 import { getCurrentWeather } from '../currentWeather.js';
 import { getWeeklyInfo } from '../weeklyWeather.js';
@@ -8,19 +14,28 @@ import { createDatabase } from '../services/storeLocations.js';
 
 class App {
 	constructor() {
-		document.addEventListener('DOMContentLoaded', () => {
-			$openBtn.addEventListener('click', () => handleSidebar());
-			$closeBtn.addEventListener('click', () => handleSidebar('close'));
-		});
-
+		this.setEventListeners();
+		this.getLocalInfo();
 		createDatabase();
-		getCurrentWeather();
-		getWeeklyInfo();
+
 		$searchBtn.addEventListener('click', searchWeatherPlace);
 		for (const $unitBtn of $unitButtons) {
 			const unit = $unitBtn.dataset.unit;
 			$unitBtn.addEventListener('click', () => handleUnitClick(unit, $unitBtn));
 		}
+	}
+
+	getLocalInfo() {
+		getCurrentWeather();
+		getWeeklyInfo();
+	}
+
+	setEventListeners() {
+		const _this = this;
+
+		$openBtn.addEventListener('click', () => handleSidebar());
+		$closeBtn.addEventListener('click', () => handleSidebar('close'));
+		$currentLocationBtn.addEventListener('click', _this.getLocalInfo);
 	}
 }
 

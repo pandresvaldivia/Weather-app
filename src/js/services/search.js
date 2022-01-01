@@ -1,13 +1,10 @@
-import {
-	$searchInput,
-	$itemContainer,
-	$highlightContent,
-} from '../selectors.js';
+import { $searchInput } from '../selectors.js';
 import { getWeatherPlaceInfo } from './weather.js';
 import { configData } from '../currentWeather.js';
 import { getTimeWeather, printWeeklyData } from '../weeklyWeather.js';
 import { addLocation } from './storeLocations.js';
 import { handleSidebar } from '../functions.js';
+import { clearData } from '../utils/clearData.js';
 
 async function searchWeatherPlace(e) {
 	e.preventDefault();
@@ -45,23 +42,6 @@ async function printWeeklyWeather(place) {
 	const weeklyList = getTimeWeather(list);
 	clearData();
 	printWeeklyData(weeklyList);
-}
-
-function clearData() {
-	clearItems();
-	clearItemsInfo();
-}
-
-function clearItems() {
-	while ($itemContainer.firstElementChild) {
-		$itemContainer.firstElementChild.remove();
-	}
-}
-
-function clearItemsInfo() {
-	while ($highlightContent.firstElementChild) {
-		$highlightContent.firstElementChild.remove();
-	}
 }
 
 function clearInput() {

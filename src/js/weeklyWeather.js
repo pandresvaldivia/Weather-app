@@ -2,6 +2,7 @@ import { $itemContainer, $highlightContent } from './selectors.js';
 import { createDomElement } from './utils/dom.js';
 import { getWeatherInfo } from './services/weather.js';
 import { getCoordinates } from './services/geolocation.js';
+import { clearData } from './utils/clearData.js';
 import {
 	formatVisibility,
 	formatWindDirection,
@@ -40,6 +41,8 @@ function getItemTemplate({
 }
 
 function printWeeklyData(weeklyList) {
+	clearData();
+
 	weeklyList.forEach((weatherInfo, index) => {
 		const item = createWeeklyItem(weatherInfo, index);
 		const itemInfo = createItemInfo(weatherInfo, index);
