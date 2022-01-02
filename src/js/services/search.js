@@ -6,10 +6,14 @@ import { addLocation } from './storeLocations.js';
 import { handleSidebar } from '../functions.js';
 import { clearData } from '../utils/clearData.js';
 
-async function searchWeatherPlace(e) {
+function searchWeatherPlace(e) {
 	e.preventDefault();
 	const place = $searchInput.value.trim();
 
+	getWeatherPlace(place);
+}
+
+async function getWeatherPlace(place) {
 	try {
 		const location = await printCurrentWeather(place);
 
@@ -48,4 +52,4 @@ function clearInput() {
 	$searchInput.value = '';
 }
 
-export { searchWeatherPlace };
+export { searchWeatherPlace, getWeatherPlace };

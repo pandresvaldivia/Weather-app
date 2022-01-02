@@ -1,9 +1,10 @@
 import { createDomElement } from './utils/dom.js';
+import { getWeatherPlace } from './services/search.js';
 import { $locationList } from './selectors.js';
 
 function getLocationTemplate({ city, country }) {
 	return `
-        <button class="optionsList-option">
+        <button class="optionsList-option" data-city="${city}">
             <span>${city}, ${country}</span><i class="icon-right"></i>
         </button>
     `;
@@ -11,9 +12,10 @@ function getLocationTemplate({ city, country }) {
 
 function printLocation(data) {
 	const locationTemplate = getLocationTemplate(data);
-	const location = createDomElement(locationTemplate);
+	const $location = createDomElement(locationTemplate);
+	$location.addEventListener('click', () => getWeatherPlace(data.city));
 
-	$locationList.appendChild(location);
+	$locationList.appendChild($location);
 }
 
 function clearLocations() {

@@ -1,3 +1,9 @@
+import { handleSidebar } from '../functions.js';
+import { getCurrentWeather } from '../currentWeather.js';
+import { getWeeklyInfo } from '../weeklyWeather.js';
+import { handleUnitClick } from '../tempetureUnit.js';
+import { searchWeatherPlace } from '../services/search.js';
+import { createDatabase } from '../services/storeLocations.js';
 import {
 	$openBtn,
 	$closeBtn,
@@ -5,12 +11,6 @@ import {
 	$searchBtn,
 	$currentLocationBtn,
 } from '../selectors.js';
-import { handleSidebar } from '../functions.js';
-import { getCurrentWeather } from '../currentWeather.js';
-import { getWeeklyInfo } from '../weeklyWeather.js';
-import { handleUnitClick } from '../tempetureUnit.js';
-import { searchWeatherPlace } from '../services/search.js';
-import { createDatabase } from '../services/storeLocations.js';
 
 class App {
 	constructor() {
