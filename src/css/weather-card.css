@@ -67,9 +67,3 @@
 .weatherCard-details span:nth-of-type(2) {
 	color: var(--gray10);
 }
-
-@media screen and (min-width: 768px) {
-	.weatherCard-container {
-		justify-content: start;
-	}
-}
