@@ -10,6 +10,8 @@ import {
 	$unitButtons,
 	$searchBtn,
 	$currentLocationBtn,
+	$app,
+	$loader,
 } from '../selectors.js';
 
 class App {
@@ -25,9 +27,11 @@ class App {
 		}
 	}
 
-	getLocalInfo() {
-		getCurrentWeather();
-		getWeeklyInfo();
+	async getLocalInfo() {
+		await getCurrentWeather();
+		await getWeeklyInfo();
+
+		this.displayApp();
 	}
 
 	setEventListeners() {
@@ -36,6 +40,11 @@ class App {
 		$openBtn.addEventListener('click', () => handleSidebar());
 		$closeBtn.addEventListener('click', () => handleSidebar('close'));
 		$currentLocationBtn.addEventListener('click', _this.getLocalInfo);
+	}
+
+	displayApp() {
+		$loader.classList.add('is-hidden');
+		$app.classList.remove('is-hidden');
 	}
 }
 
