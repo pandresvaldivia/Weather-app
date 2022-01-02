@@ -2,6 +2,7 @@ import '../css/icon.css';
 import '../css/main.css';
 import '../css/layout.css';
 import '../css/button.css';
+import '../css/scrollbar.css';
 import '../css/navigation.css';
 import '../css/weather-info.css';
 import '../css/search-menu.css';
