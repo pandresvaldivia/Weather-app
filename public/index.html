@@ -88,7 +88,7 @@
 		<div class="layout">
 			<section class="weatherInfo">
 				<div class="searchMenu">
-					<button class="searchMenu-close">
+					<button class="searchMenu-close" aria-label="Close search sidebar">
 						<i class="icon-close" aria-hidden="true"></i>
 					</button>
 					<form class="form">
@@ -102,13 +102,17 @@
 				</div>
 				<header class="navigation">
 					<button class="buttonMenu">Search for places</button>
-					<button id="currentLocation" class="buttonIcon">
+					<button
+						id="currentLocation"
+						aria-label="Current location"
+						class="buttonIcon"
+					>
 						<i class="icon-location"></i>
 					</button>
 				</header>
 				<article class="weatherInfo-description">
 					<figure class="weatherInfo-image">
-						<img src="./assets/images/Shower.png" alt="" />
+						<img src="./assets/images/09d.png" alt="" />
 					</figure>
 					<div class="weatherInfo-description">
 						<p class="weatherInfo-tempeture"><span></span>°C</p>
@@ -129,18 +133,31 @@
 			<div class="layout-main">
 				<main class="main">
 					<div class="wrapper">
-						<div class="measurementUnits">
+						<div
+							class="measurementUnits"
+							role="listbox"
+							aria-label="Temperature scales"
+						>
 							<button
 								class="measurementUnits-option"
 								data-unit="C"
+								role="option"
+								aria-label="Choose Celsius"
 								aria-selected="true"
 							>
 								°C
 							</button>
-							<button class="measurementUnits-option" data-unit="F">°F</button>
+							<button
+								class="measurementUnits-option"
+								role="option"
+								aria-label="Choose Fahrenheit"
+								data-unit="F"
+							>
+								°F
+							</button>
 						</div>
 						<div class="main-content">
-							<section class="weatherCard-container"></section>
+							<section class="weatherCard-container" role="tablist"></section>
 							<section class="hightlightSection" aria-labelledby="hightlights">
 								<h2 class="hightlightSection-title" id="hightlights">
 									Today’s Hightlights

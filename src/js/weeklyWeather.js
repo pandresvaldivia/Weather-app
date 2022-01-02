@@ -23,7 +23,7 @@ function getItemTemplate({
 	date,
 }) {
 	return `
-        <article class="weatherCard">
+        <article class="weatherCard" role="tab">
             <div class="weatherCard-description" title="${name}">
                 <p class="weatherCard-date">${date}</p>
                 <figure class="weatherCard-image">
