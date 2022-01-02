@@ -1,3 +1,4 @@
+import '../css/loader.css';
 import '../css/icon.css';
 import '../css/main.css';
 import '../css/layout.css';
