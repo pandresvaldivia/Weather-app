@@ -27,11 +27,11 @@ class App {
 		}
 	}
 
-	async getLocalInfo() {
+	async getLocalInfo(loaded = false) {
 		await getCurrentWeather();
 		await getWeeklyInfo();
 
-		this.displayApp();
+		if (!loaded) this.displayApp();
 	}
 
 	setEventListeners() {
@@ -39,7 +39,9 @@ class App {
 
 		$openBtn.addEventListener('click', () => handleSidebar());
 		$closeBtn.addEventListener('click', () => handleSidebar('close'));
-		$currentLocationBtn.addEventListener('click', _this.getLocalInfo);
+		$currentLocationBtn.addEventListener('click', () =>
+			_this.getLocalInfo(true)
+		);
 	}
 
 	displayApp() {

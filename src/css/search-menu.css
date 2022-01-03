@@ -11,6 +11,8 @@
 	-moz-transition: 0.3s linear;
 	-ms-transition: 0.3s linear;
 	-o-transition: 0.3s linear;
+	padding-inline-end: 0.75rem;
+	padding-inline-start: 0.75rem;
 	z-index: 2;
 }
 
@@ -20,8 +22,8 @@
 
 .searchMenu-close {
 	border: none;
-	block-size: 14px;
-	inline-size: 14px;
+	block-size: 0.875rem;
+	inline-size: 0.875rem;
 	padding: 0;
 	background: transparent;
 	position: absolute;
@@ -37,7 +39,7 @@
 
 @media screen and (min-width: 800px) {
 	.searchMenu {
-		padding-inline-end: 46px;
-		padding-inline-start: 46px;
+		padding-inline-end: 2.875rem;
+		padding-inline-start: 2.875rem;
 	}
 }
