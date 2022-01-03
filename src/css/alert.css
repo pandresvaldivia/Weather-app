@@ -1,0 +1,23 @@
+.alert-container {
+	display: flex;
+	justify-content: center;
+}
+
+.alert {
+	margin-block-start: 1rem;
+	background: rgb(204, 0, 0);
+	font: var(--button);
+	padding-block-end: 0.5rem;
+	padding-block-start: 0.5rem;
+	padding-inline-end: 1rem;
+	padding-inline-start: 1rem;
+	border-radius: 0.25rem;
+	-webkit-border-radius: 0.25rem;
+	-moz-border-radius: 0.25rem;
+	-ms-border-radius: 0.25rem;
+	-o-border-radius: 0.25rem;
+}
+
+.alert p {
+	margin: 0;
+}

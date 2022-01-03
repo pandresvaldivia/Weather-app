@@ -1,12 +1,12 @@
-import axios from 'axios';
-
 const key = process.env.APIKEY;
 
 async function getWeatherInfo(lat, lon, range = 'weather') {
 	try {
-		const { data } = await axios.get(
+		const response = await fetch(
 			`https://api.openweathermap.org/data/2.5/${range}?lat=${lat}&lon=${lon}&appid=${key}&units=metric`
 		);
+
+		const data = await response.json();
 
 		return { ...data, error: false };
 	} catch {
@@ -16,9 +16,11 @@ async function getWeatherInfo(lat, lon, range = 'weather') {
 
 async function getWeatherPlaceInfo(place, range = 'weather') {
 	try {
-		const { data } = await axios.get(
+		const response = await fetch(
 			`https://api.openweathermap.org/data/2.5/${range}?q=${place}&appid=${key}&units=metric`
 		);
+
+		const data = await response.json();
 
 		return { ...data, error: false };
 	} catch {

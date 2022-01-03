@@ -15,8 +15,9 @@ import '../css/weather-card.css';
 import '../css/hightlight-section.css';
 import '../css/hightlight-card.css';
 import '../css/progressBar.css';
+import '../css/alert.css';
 import '../css/footer.css';
 
-import App from './classes/app.js';
+import App from './app/app.js';
 
 new App();

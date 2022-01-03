@@ -125,7 +125,6 @@ function countData() {
 		const request = db.transaction('location').objectStore('location').count();
 
 		request.onsuccess = () => {
-			console.log(request.result);
 			resolve(request.result);
 		};
 

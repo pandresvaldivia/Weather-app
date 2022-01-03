@@ -3,6 +3,7 @@ export const body = document.querySelector('.body');
 export const $app = document.querySelector('#app');
 export const $loader = document.querySelector('.loader');
 export const $openBtn = document.querySelector('.buttonMenu');
+export const $alertContainer = document.querySelector('.alert-container');
 export const $closeBtn = document.querySelector('.searchMenu-close');
 export const $currentLocationBtn = document.querySelector('#currentLocation');
 export const $temp = document.querySelector('.weatherInfo-tempeture span');

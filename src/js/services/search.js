@@ -5,6 +5,7 @@ import { getTimeWeather, printWeeklyData } from '../weeklyWeather.js';
 import { addLocation } from './storeLocations.js';
 import { handleSidebar } from '../functions.js';
 import { clearData } from '../utils/clearData.js';
+import { printAlert } from '../alert.js';
 
 function searchWeatherPlace(e) {
 	e.preventDefault();
@@ -24,7 +25,7 @@ async function getWeatherPlace(place) {
 		clearInput();
 		handleSidebar('close');
 	} catch (error) {
-		console.error(error);
+		printAlert('City not found');
 	}
 }
 
